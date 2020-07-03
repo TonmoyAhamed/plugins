@@ -1,0 +1,54 @@
+body{
+    background-image: url('../images/bridge1.jpg');
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.c-nav {
+    background-color: #10131c00;
+    color: white !important;
+}
+.menu li {
+    margin-left: 12px;
+}
+.menu  li a{
+    font-weight: 700;
+    color: white !important;
+    position: relative;
+    transition: all 300ms ease-out;
+}
+.menu li a:hover{
+    color: red !important;
+}
+.menu  li a::before{
+    content: '';
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+    background: red;
+    width: 0;
+    height: 4px;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+.menu li a:hover::before{
+    opacity: 1;
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+.typ {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+}
+.typ h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+.type{
+    color: red;
+}
